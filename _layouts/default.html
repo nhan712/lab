@@ -18,11 +18,7 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
-<<<<<<< HEAD
-          <p class="view"><a href="{{ site.github }} {{ '/about' }}">About</a></p>
-=======
-          <p class="view"><a href="{{ site.github }}/about">About</a></p>
->>>>>>> 1d7c5965ba0254ca72763590277ac6a15c4bc03a
+          <p class="view"><a href="{% raw %}{{ '/about' | relative_url }}{% endraw %}">About</a></p>
         {% endif %}
 
         {% if site.show_downloads %}
